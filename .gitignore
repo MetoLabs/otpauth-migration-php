@@ -1,0 +1,49 @@
+# Composer dependencies
+/vendor/
+
+# PHPUnit test results
+/phpunit.xml
+/phpunit.xml.dist
+/test-results.xml
+/coverage/
+
+# Logs
+*.log
+
+# IDEs and editors
+/.idea/
+/*.sublime-project
+/*.sublime-workspace
+/.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.swp
+*.bak
+*.tmp
+*.temp
+
+# Application cache and temp directories
+/tmp/
+/cache/
+/*.lock
+
+# Exported artifacts
+*.tar.gz
+*.zip
+
+# PHPUnit cache
+.phpunit.result.cache
+
+# Ignore test output or temp extracted files
+/tests/output/
+/tests/tmp/
+
+# Local dev files
+/test.php
+
+# Output file
+migration.bin
