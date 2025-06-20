@@ -2,7 +2,7 @@
 
 # MetoLabs\OtpAuthMigration
 
-A simple PHP wrapper for the ```dim13/otpauth``` (https://github.com/dim13/otpauth) CLI tool to decode Google Authenticator migration URLs (```otpauth-migration://```) into usable TOTP secrets.
+A simple PHP wrapper for the ```dim13/otpauth```  [CLI tool](https://github.com/dim13/otpauth) to decode Google Authenticator migration URLs (```otpauth-migration://```) into usable TOTP secrets.
 
 This package runs the ```otpauth``` CLI binary under the hood via [Symfony Process](https://symfony.com/doc/current/components/process.html) and parses its output.
 
@@ -25,7 +25,7 @@ This package runs the ```otpauth``` CLI binary under the hood via [Symfony Proce
 
 1. Install the ```dim13/otpauth``` CLI tool (requires Go):
 
-``` 
+``` bash
 go install github.com/dim13/otpauth@latest
 ```
 
@@ -35,7 +35,7 @@ Make sure ```otpauth``` is in your ```PATH``` when using installer.
 
 2. Install the package via Composer:
 
-```
+```bash
 composer require metolabs\otpauth-migration-php
 ```
 3. Add the ```OtpAuthMigration``` class to your project or include via your autoloader.
@@ -43,7 +43,7 @@ composer require metolabs\otpauth-migration-php
 ---
 ## Usage
 
-```
+```php
 <?php
 
 use MetoLabs\OtpAuthMigration\OtpAuthMigration;
@@ -76,7 +76,7 @@ try {
  ---
 ## Constructor options
 
-```
+```php
 // Create an instance
 $otp = new OtpAuthMigration();
 // Create an instance statically
@@ -91,7 +91,7 @@ $otp = OtpAuthMigration::make('/usr/local/bin/otpauth');
  ---
 ## Passing environment variables
 
-```
+```php
 $env = [
     'PATH' => '/custom/path:' . getenv('PATH'),
 ];
