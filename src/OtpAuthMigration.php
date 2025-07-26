@@ -5,6 +5,7 @@ namespace MetoLabs\OtpAuthMigration;
 use InvalidArgumentException;
 use Symfony\Component\Process\Process;
 use Symfony\Component\Process\Exception\ProcessFailedException;
+use function exec;
 
 class OtpAuthMigration
 {

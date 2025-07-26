@@ -1,7 +1,7 @@
 {
     "name": "metolabs/otpauth-migration-php",
     "description": "Google Authenticator migration decoder",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "type": "library",
     "license": "MIT",
     "autoload": {

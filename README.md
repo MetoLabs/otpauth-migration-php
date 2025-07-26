@@ -61,12 +61,12 @@ try {
     $accounts = $otp->decode($migrationUrl);
 
     foreach ($accounts as $account) {
-        echo "Issuer:   {$account['issuer']}\n";
-        echo "Account:  {$account['account']}\n";
-        echo "Secret:   {$account['secret']}\n";
+        echo "Issuer:    {$account['issuer']}\n";
+        echo "Account:   {$account['account']}\n";
+        echo "Secret:    {$account['secret']}\n";
         echo "Algorithm: {$account['algorithm']}\n";
-        echo "Digits:   {$account['digits']}\n";
-        echo "Period:   {$account['period']}\n";
+        echo "Digits:    {$account['digits']}\n";
+        echo "Period:    {$account['period']}\n";
         echo str_repeat('-', 20) . "\n";
     }
 } catch (ProcessFailedException $e) {
